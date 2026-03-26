@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diamond Mosaic Generator</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/components.css">
+</head>
+
+<body>
+
+<div id="app">
+
+    <!-- SIDEBAR -->
+    <div id="sidebar">
+
+        <h2>💎 Mosaic Generator</h2>
+
+        <div class="section">
+            <input type="file" id="fileInput">
+        </div>
+
+        <div class="section">
+            <h3>⚙️ Settings</h3>
+
+            <label>Detail Level (grid size)</label>
+            <input type="number" id="detailLevel" value="100" min="10" max="300">
+
+            <label>Max colors</label>
+            <input type="number" id="maxColors" value="10" min="2" max="35">
+            
+            <label>Depth Rounding</label>
+            <input type="number" id="depthRounding" value="19" min="1" max="255">
+            
+            <label>Cell Size</label>
+            <input type="number" id="cellSize" value="10" min="10" max="50">
+          </div>
+
+
+        <div class="section">
+            <button id="processBtn" class="primary">🚀 Generate</button>
+            <button id="modeColor">🎨 Color</button>
+            <button id="modeBW">🖨 Print</button>
+        </div>
+
+        <div class="section">
+            <button id="exportPNG">Export PNG</button>
+            <button id="exportJSON">Export JSON</button>
+        </div>
+
+        <div class="section">
+            <h3>Palette</h3>
+            <div id="palette"></div>
+        </div>
+
+    </div>
+
+    <!-- MAIN -->
+    <div id="main">
+        <canvas id="canvas"></canvas>
+    </div>
+
+</div>
+
+<script src="app.js" defer></script>
+
+</body>
+</html>

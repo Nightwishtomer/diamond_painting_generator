@@ -1,0 +1,69 @@
+/* CANVAS */
+
+canvas {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    cursor: grab;
+}
+
+/* INPUTS */
+
+input, button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+}
+
+/* BUTTONS */
+
+button {
+    background: #3a3a3a;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #555;
+}
+
+button.primary {
+    background: #4CAF50;
+}
+
+button.primary:hover {
+    background: #66bb6a;
+}
+
+button.danger {
+    background: #e53935;
+}
+
+button.danger:hover {
+    background: #ef5350;
+}
+
+/* SECTIONS */
+
+.section {
+    margin-bottom: 20px;
+}
+
+/* PALETTE */
+
+.palette-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+}
